@@ -6,6 +6,7 @@ import { ArrowUpRight, ArrowLeft, ArrowRight, Play } from 'lucide-react';
 import SmoothScrollProvider from './components/layout/SmoothScrollProvider';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import FAQ from './components/sections/FAQ';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -227,6 +228,8 @@ export default function App() {
               </p>
             </div>
           </section>
+
+          <FAQ />
 
           <Footer />
 
