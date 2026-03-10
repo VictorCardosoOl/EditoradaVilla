@@ -10,6 +10,17 @@ import FAQ from './components/sections/FAQ';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const NoiseOverlay = () => (
+  <div className="absolute inset-0 opacity-[0.04] mix-blend-multiply pointer-events-none z-0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+    </svg>
+  </div>
+);
+
 export default function App() {
   const container = useRef<HTMLDivElement>(null);
 
@@ -106,7 +117,8 @@ export default function App() {
           </section>
 
           {/* Section 1: Video / About */}
-          <section className="grid grid-cols-1 md:grid-cols-4 border-b border-black">
+          <section className="relative grid grid-cols-1 md:grid-cols-4 border-b border-black">
+            <NoiseOverlay />
             <div className="p-4 md:p-6 3xl:p-10 border-b md:border-b-0 md:border-r border-black text-[10px] md:text-xs 3xl:text-sm uppercase font-medium">
               O Manifesto<br/>Digital
             </div>
@@ -135,7 +147,8 @@ export default function App() {
           </section>
 
           {/* Section: Publications Index (Table) */}
-          <section className="grid grid-cols-1 md:grid-cols-4 border-b border-black bg-[#f4f4f4]">
+          <section className="relative grid grid-cols-1 md:grid-cols-4 border-b border-black bg-[#f4f4f4]">
+            <NoiseOverlay />
             <div className="p-4 md:p-6 3xl:p-10 border-b md:border-b-0 md:border-r border-black text-[10px] md:text-xs 3xl:text-sm uppercase font-medium">
               Índice de<br/>Publicações
             </div>
@@ -169,7 +182,8 @@ export default function App() {
           </section>
 
           {/* Section: Massive Quote */}
-          <section className="border-b border-black py-24 md:py-48 3xl:py-64 px-6 md:px-12 3xl:px-24 flex justify-center items-center text-center">
+          <section className="relative border-b border-black py-24 md:py-48 3xl:py-64 px-6 md:px-12 3xl:px-24 flex justify-center items-center text-center">
+            <NoiseOverlay />
             <h2 className="reveal-text text-4xl md:text-6xl lg:text-8xl 3xl:text-9xl font-serif font-light leading-[1.1] tracking-tight max-w-6xl 3xl:max-w-[120rem]">
               "A materialidade do papel exige uma <span className="italic">leitura lenta</span>. É um antídoto contra a amnésia digital."
             </h2>
