@@ -17,7 +17,7 @@ export default function Footer() {
       {/* 2. Massive Background Typography */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none select-none flex justify-center translate-y-[20%] z-0">
         <span className="font-serif text-[18vw] leading-none text-white/[0.03] whitespace-nowrap tracking-tighter">
-          VILLA
+          FORMOSA
         </span>
       </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
         {/* Col 1: Identity */}
         <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 md:border-r border-white/20 flex flex-col justify-between min-h-[350px]">
           <div>
-            <h3 className="font-serif text-4xl text-white tracking-tight">Fundação Villa</h3>
+            <h3 className="font-serif text-4xl text-white tracking-tight">Fundação Formosa</h3>
             <p className="font-serif italic text-white/60 mt-6 text-xl leading-relaxed">
               A arte da encadernação manual e o peso da palavra impressa.
             </p>
@@ -72,9 +72,9 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <a href="mailto:info@fundacaovilla.org" className="inline-flex items-center gap-3 text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 hover:text-white transition-colors group w-fit font-medium text-white/80">
+          <a href="mailto:info@fundacaoformosa.org" className="inline-flex items-center gap-3 text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 hover:text-white transition-colors group w-fit font-medium text-white/80">
             <Mail className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
-            info@fundacaovilla.org
+            info@fundacaoformosa.org
           </a>
         </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
             </nav>
           </div>
           <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 text-white/40 flex flex-col gap-2 font-medium">
-            <span>© 2026 Fundação Villa</span>
+            <span>© 2026 Fundação Formosa</span>
             <span>Design por Especialista UX</span>
           </div>
         </div>

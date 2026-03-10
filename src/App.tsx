@@ -79,7 +79,7 @@ export default function App() {
           <section className="border-b border-black flex justify-center items-center overflow-hidden py-16 md:py-32 3xl:py-48 bg-[#f4f4f4]">
             <div className="overflow-hidden pb-4">
               <h1 className="hero-title text-[35vw] md:text-[28vw] 3xl:text-[25vw] font-serif leading-[0.75] tracking-[-0.08em] -ml-[2vw] text-black">
-                Villa
+                Formosa
               </h1>
             </div>
           </section>
@@ -219,7 +219,7 @@ export default function App() {
             </div>
             <div className="col-span-1 md:col-span-3 p-8 md:p-16 lg:p-24 3xl:p-32 flex justify-center">
               <p className="reveal-text font-serif text-2xl md:text-3xl lg:text-4xl 3xl:text-5xl leading-[1.4] max-w-4xl 3xl:max-w-6xl text-justify">
-                A Editora da Villa foi renomeada para Fundação de Arte Contemporânea como parte do desejo de consolidar todos os interesses em arte e cultura sob uma única rubrica: <span className="italic">Villa</span>.
+                A Editora Formosa foi renomeada para Fundação de Arte Contemporânea como parte do desejo de consolidar todos os interesses em arte e cultura sob uma única rubrica: <span className="italic">Formosa</span>.
                 <br/><br/>
                 A Fundação continuará sendo uma embaixadora global, mantendo seu compromisso de oferecer exposições, eventos e programas educacionais gratuitos, a fim de garantir a acessibilidade à arte em sua forma mais pura e tátil.
               </p>

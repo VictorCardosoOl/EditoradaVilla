@@ -14,7 +14,7 @@ export default function Navbar() {
       }`}
     >
       <div className="p-4 md:p-5 3xl:p-8 border-b md:border-b-0 md:border-r border-black flex items-center justify-between group cursor-pointer hover:bg-black hover:text-white transition-colors">
-        <span>Editora da Villa</span>
+        <span>Editora Formosa</span>
         <Plus className="w-4 h-4 3xl:w-5 3xl:h-5 group-hover:rotate-90 transition-transform" />
       </div>
       <div className="p-4 md:p-5 3xl:p-8 border-b md:border-b-0 md:border-r border-black hidden md:flex items-center">
@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
       <div className="p-4 md:p-5 3xl:p-8 flex justify-between items-center">
         <span className="hidden lg:inline">Fundação para a arte contemporânea</span>
-        <span className="lg:hidden">Fundação Villa</span>
+        <span className="lg:hidden">Fundação Formosa</span>
         <span className="border border-black px-2 py-1 3xl:px-3 3xl:py-1.5 rounded-full text-[9px] 3xl:text-[10px]">PT</span>
       </div>
     </header>
