@@ -1,11 +1,11 @@
-import { ArrowRight, Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-black text-white/80 overflow-hidden border-t border-black">
+    <footer className="relative bg-[#050505] text-white overflow-hidden border-t border-black">
       
-      {/* 1. Noise Texture Overlay */}
-      <div className="absolute inset-0 opacity-[0.07] mix-blend-overlay pointer-events-none z-0">
+      {/* 1. Noise Texture Overlay - More prominent for brutalism */}
+      <div className="absolute inset-0 opacity-[0.12] mix-blend-screen pointer-events-none z-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <filter id="noiseFilter">
             <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
@@ -15,86 +15,81 @@ export default function Footer() {
       </div>
 
       {/* 2. Massive Background Typography */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none select-none flex justify-center translate-y-[20%] z-0">
-        <span className="font-serif text-[18vw] leading-none text-white/[0.03] whitespace-nowrap tracking-tighter">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none select-none flex justify-center translate-y-[25%] z-0 opacity-20">
+        <span className="font-serif text-[22vw] leading-none text-white/[0.05] whitespace-nowrap tracking-tighter">
           FORMOSA
         </span>
       </div>
 
-      {/* 3. Main Grid Layout */}
+      {/* 3. Main Grid Layout - Stark borders for brutalism */}
       <div className="relative z-10 w-full max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         
         {/* Col 1: Identity */}
-        <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 md:border-r border-white/20 flex flex-col justify-between min-h-[350px]">
+        <div className="p-8 md:p-12 lg:p-16 3xl:p-24 border-b md:border-b-0 md:border-r border-white/15 flex flex-col justify-between min-h-[400px] 3xl:min-h-[500px]">
           <div>
-            <h3 className="font-serif text-4xl text-white tracking-tight">Fundação Formosa</h3>
-            <p className="font-serif italic text-white/60 mt-6 text-xl leading-relaxed">
+            <h3 className="font-serif text-4xl md:text-5xl 3xl:text-6xl text-white tracking-tight font-light">Fundação<br/>Formosa</h3>
+            <p className="font-serif italic text-white/50 mt-8 text-lg 3xl:text-xl leading-relaxed max-w-xs">
               A arte da encadernação manual e o peso da palavra impressa.
             </p>
           </div>
-          <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 text-white/50 font-medium">
+          <div className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] mt-12 text-white/40 font-medium">
             Est. 2026
           </div>
         </div>
 
         {/* Col 2: Local / CTA */}
-        <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 lg:border-r border-white/20 flex flex-col justify-between min-h-[350px]">
+        <div className="p-8 md:p-12 lg:p-16 3xl:p-24 border-b md:border-b-0 lg:border-r border-white/15 flex flex-col justify-between min-h-[400px] 3xl:min-h-[500px]">
           <div>
-            <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mb-8 text-white/50 font-medium">Localização</div>
-            <p className="text-sm leading-loose text-white/80">
+            <div className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] mb-10 text-white/40 font-medium">Localização</div>
+            <p className="text-sm 3xl:text-base leading-loose text-white/80 font-mono uppercase tracking-wide">
               Rua da Matriz, 42<br />
-              São Paulo SP 01000-000<br />
+              São Paulo SP<br />
+              01000-000<br />
               Brasil
             </p>
           </div>
-          <a href="#" className="inline-flex items-center gap-3 text-[10px] 3xl:text-xs uppercase tracking-widest text-white hover:text-white/70 transition-colors mt-12 group w-fit font-medium">
-            Agendar Visita 
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+          <a href="#" className="group inline-flex items-center justify-between border-b border-white/20 pb-4 mt-12 hover:border-white transition-colors w-full">
+            <span className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] text-white font-medium">Agendar Visita</span>
+            <ArrowRight className="w-4 h-4 text-white/50 group-hover:text-white group-hover:translate-x-2 transition-all duration-300" />
           </a>
         </div>
 
         {/* Col 3: Social */}
-        <div className="p-8 md:p-12 lg:p-16 border-b md:border-b-0 lg:border-r border-white/20 flex flex-col justify-between min-h-[350px]">
+        <div className="p-8 md:p-12 lg:p-16 3xl:p-24 border-b md:border-b-0 lg:border-r border-white/15 flex flex-col justify-between min-h-[400px] 3xl:min-h-[500px]">
           <div>
-            <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mb-8 text-white/50 font-medium">Conectar</div>
-            <div className="flex flex-col gap-5">
-              <a href="#" className="inline-flex items-center gap-4 text-sm hover:text-white transition-colors group w-fit text-white/80">
-                <Instagram className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" /> 
-                <span className="group-hover:translate-x-1 transition-transform duration-300">Instagram</span>
-              </a>
-              <a href="#" className="inline-flex items-center gap-4 text-sm hover:text-white transition-colors group w-fit text-white/80">
-                <Twitter className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" /> 
-                <span className="group-hover:translate-x-1 transition-transform duration-300">Twitter (X)</span>
-              </a>
-              <a href="#" className="inline-flex items-center gap-4 text-sm hover:text-white transition-colors group w-fit text-white/80">
-                <Linkedin className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" /> 
-                <span className="group-hover:translate-x-1 transition-transform duration-300">LinkedIn</span>
-              </a>
+            <div className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] mb-10 text-white/40 font-medium">Conectar</div>
+            <div className="flex flex-col gap-0">
+              {['Instagram', 'Twitter (X)', 'LinkedIn'].map((social) => (
+                <a key={social} href="#" className="group flex items-center justify-between border-b border-white/10 py-4 hover:border-white transition-colors">
+                  <span className="text-xs 3xl:text-sm uppercase tracking-widest text-white/70 group-hover:text-white transition-colors">{social}</span>
+                  <ArrowUpRight className="w-4 h-4 text-white opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
+                </a>
+              ))}
             </div>
           </div>
-          <a href="mailto:info@fundacaoformosa.org" className="inline-flex items-center gap-3 text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 hover:text-white transition-colors group w-fit font-medium text-white/80">
-            <Mail className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
-            info@fundacaoformosa.org
+          <a href="mailto:info@fundacaoformosa.org" className="group flex items-center justify-between border-b border-white/20 pb-4 mt-12 hover:border-white transition-colors w-full">
+            <span className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] text-white font-medium">Email Us</span>
+            <ArrowUpRight className="w-4 h-4 text-white/50 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
           </a>
         </div>
 
         {/* Col 4: Menu / Credits */}
-        <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-between min-h-[350px]">
+        <div className="p-8 md:p-12 lg:p-16 3xl:p-24 flex flex-col justify-between min-h-[400px] 3xl:min-h-[500px]">
           <div>
-            <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mb-8 text-white/50 font-medium">Navegação</div>
+            <div className="text-[10px] 3xl:text-xs uppercase tracking-[0.2em] mb-10 text-white/40 font-medium">Navegação</div>
             <nav className="flex flex-col gap-4">
               {['O Manifesto', 'Acervo Visual', 'Lançamentos', 'Reservas', 'Termos de Uso'].map((link) => (
                 <a 
                   href="#" 
                   key={link} 
-                  className="text-sm text-white/80 hover:text-white transition-all duration-300 hover:translate-x-2 w-fit"
+                  className="text-sm 3xl:text-base text-white/60 hover:text-white transition-all duration-300 hover:translate-x-2 w-fit font-serif italic"
                 >
                   {link}
                 </a>
               ))}
             </nav>
           </div>
-          <div className="text-[9px] md:text-[10px] 3xl:text-xs uppercase tracking-widest mt-12 text-white/40 flex flex-col gap-2 font-medium">
+          <div className="text-[9px] 3xl:text-[10px] uppercase tracking-[0.2em] mt-12 text-white/30 flex flex-col gap-3 font-medium">
             <span>© 2026 Fundação Formosa</span>
             <span>Design por Especialista UX</span>
           </div>
